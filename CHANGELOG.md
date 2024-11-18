@@ -1,13 +1,5 @@
 # Changelog
 
-
-## [1.7.0](https://github.com/CircuitQuest/kaizoku/compare/kaizoku-v1.6.1...kaizoku-v1.7.0) (2024-11-18)
-
-
-### Features
-
-* update kavita integration to update specific libraries, when specified ([#96](https://github.com/CircuitQuest/kaizoku/issues/96)) ([9ccd7c0](https://github.com/CircuitQuest/kaizoku/commit/9ccd7c0241517f37910d8549668d52fb9dcf9c0f))
-
 ## [1.6.1](https://github.com/oae/kaizoku/compare/kaizoku-v1.6.0...kaizoku-v1.6.1) (2023-02-07)
 
 
