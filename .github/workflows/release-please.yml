@@ -113,10 +113,10 @@ jobs:
             ${{ secrets.DOCKERHUB_USERNAME }}/kaizoku:v${{ needs.release-please.outputs.release_major }}
             ${{ secrets.DOCKERHUB_USERNAME }}/kaizoku:v${{ needs.release-please.outputs.release_major }}.${{ needs.release-please.outputs.release_minor }}
             ${{ secrets.DOCKERHUB_USERNAME }}/kaizoku:v${{ needs.release-please.outputs.release_major }}.${{ needs.release-please.outputs.release_minor }}.${{ needs.release-please.outputs.release_patch }}
-            ghcr.io/${{ github.repository }}:latest
-            ghcr.io/${{ github.repository }}:v${{ needs.release-please.outputs.release_major }}
-            ghcr.io/${{ github.repository }}:v${{ needs.release-please.outputs.release_major }}.${{ needs.release-please.outputs.release_minor }}
-            ghcr.io/${{ github.repository }}:v${{ needs.release-please.outputs.release_major }}.${{ needs.release-please.outputs.release_minor }}.${{ needs.release-please.outputs.release_patch }}
+            ghcr.io/${{ github.repository | toLower }}:latest
+            ghcr.io/${{ github.repository | toLower }}:v${{ needs.release-please.outputs.release_major }}
+            ghcr.io/${{ github.repository | toLower }}:v${{ needs.release-please.outputs.release_major }}.${{ needs.release-please.outputs.release_minor }}
+            ghcr.io/${{ github.repository | toLower }}:v${{ needs.release-please.outputs.release_major }}.${{ needs.release-please.outputs.release_minor }}.${{ needs.release-please.outputs.release_patch }}
         if: ${{ needs.release-please.outputs.release_created }}
 
       - name: Move cache
