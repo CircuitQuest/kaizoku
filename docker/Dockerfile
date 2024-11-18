@@ -1,14 +1,14 @@
 # syntax = docker/dockerfile:experimental
 
-FROM ghcr.io/linuxserver/baseimage-ubuntu:jammy as base
+FROM ghcr.io/linuxserver/baseimage-ubuntu:noble as base
 
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
 RUN apt install -y --no-install-recommends nodejs \
-  libglib2.0-0 \
+  libglib2.0-0t64 \
   libnss3 \
-  libatk1.0-0 \
-  libatk-bridge2.0-0 \
-  libcups2 \
+  libatk1.0-0t64 \
+  libatk-bridge2.0-0t64 \
+  libcups2t64 \
   libdrm2 \
   libxcb1 \
   libxkbcommon0 \
